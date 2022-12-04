@@ -1,6 +1,7 @@
 import 'classeAlimento.dart';
+import 'classeBolo.dart';
 
-class Legumes extends Alimento {
+class Legumes extends Alimento implements Bolo {
   bool isPrecisaCozinhar;
 
   Legumes(
@@ -16,5 +17,20 @@ class Legumes extends Alimento {
     } else {
       print("Nem precisa cozinhar.");
     }
+  }
+
+  @override
+  void separarIngredientes() {
+    // TODO: implement separarIngredientes
+  }
+
+  @override
+  void fazerMassa() {
+    // TODO: implement fazerMassa
+  }
+
+  @override
+  void assar() {
+    // TODO: implement assar
   }
 }

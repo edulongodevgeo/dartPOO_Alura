@@ -1,6 +1,7 @@
 import 'classeAlimento.dart';
+import 'classeBolo.dart';
 
-class Fruta extends Alimento {
+class Fruta extends Alimento implements Bolo {
   //Nome, peso e cor da classe Alimento
   String sabor;
   int diasDesdeColheita;
@@ -23,5 +24,20 @@ class Fruta extends Alimento {
 
   void fazerSuco() {
     print("Você fez um ótimo suco de $nome");
+  }
+
+  @override
+  void separarIngredientes() {
+    print("Catar a fruta...");
+  }
+
+  @override
+  void fazerMassa() {
+    print("Misturar a/o $nome com farinha, açucar, ovos, etc.");
+  }
+
+  @override
+  void assar() {
+    print("Colocar no forno o bolo de $nome.");
   }
 }

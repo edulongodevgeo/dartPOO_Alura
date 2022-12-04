@@ -12,4 +12,10 @@ class Nozes extends Fruta {
     //bool isMadura,
     this.porcentagemOleoNatural,
   ) : super(nome, peso, cor, sabor, diasDesdeColheita);
+
+  @override
+  void fazerMassa() {
+    print("Tirar a casca...");
+    super.fazerMassa();
+  }
 }
